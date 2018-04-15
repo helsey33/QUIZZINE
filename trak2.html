@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>QUIZZINE</title>
+	<link rel="shortcut icon" type="image/png" href="qLogo.png" />
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="t2Style.css">
+</head>
+<body>
+	<div class="container">
+		
+			<div class="win res">
+				<h1>Right Answers : <span id="resA"></span></h1>
+				<h1>Wrong Answers : <span id="resW"></span></h1>
+			</div>
+			
+		<div class="uId">
+			 <form>
+			 	<input class="id" type="text" placeholder="Enter your USN">
+			 	<input type="submit" value="Enter" class="sId">
+			 </form>
+		</div>
+		<div class="qBox">
+			<div class="ques">
+				<h1>Let's Begin</h1>
+			</div>
+			<div class="options">
+				<ul class="list">
+					<li class="list__item">
+						
+						<label for="1"><span class="op op1" ></span></label>
+						<input type="radio" class="radio-btn" name="choice" id="1" />
+							 
+						
+						
+					</li>
+					<li class="list__item">
+						
+							
+							<label for="2"><span class="op op2" ></span></label>
+							<input type="radio" class="radio-btn" name="choice" id="2" />
+						
+						
+					</li>
+					<li class="list__item">
+							
+								
+							  	<label for="3"><span class="op op3" ></span></label>
+							  	<input type="radio" class="radio-btn" name="choice" id="3" />
+							 
+						
+					</li>
+					<li class="list__item">
+						
+							
+								
+							  	<label for="4"><span class="op op4" ></span></label>
+							  	<input type="radio" class="radio-btn" name="choice" id="4" />
+							 
+							
+						
+					</li>
+
+				</ul>
+				</div>
+				<div class="pBar">
+					
+				</div>
+		</div>
+	</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCcka4zsalsx3cBvWI9-dIHs0ONxpHsyQ8",
+    authDomain: "quizzine-6f020.firebaseapp.com",
+    databaseURL: "https://quizzine-6f020.firebaseio.com",
+    projectId: "quizzine-6f020",
+    storageBucket: "quizzine-6f020.appspot.com",
+    messagingSenderId: "1016407413821"
+  };
+  firebase.initializeApp(config);
+</script>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script type="text/javascript" src="t2Main.js"></script>
+
+
+</body>
+</html>
